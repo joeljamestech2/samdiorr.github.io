@@ -1,42 +1,60 @@
-l<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>samdiorr info web</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="menu">
-      <p>sam diorr info web</p>
-      <i class="fas fa-angle-down"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
     </div>
-    <ul class="social-lists hide">
-      <li>
-        <a href="https://whatsapp.com/channel/0029VavG5ZHJuyABcBP02R3t"> <i class="fab fa-whatsapp"style="color: green"></i>
-        <a>WhatsApp</a>
-      </li>
-      <li>
-        <a href="https://youtube.com/@samdiorr_01?si=yXvllQrJnVCZ9joi"> <i class="fab fa-YouTube"style="color: red"></i>
-        <a>YouTube</a>
-      </li>
-      <li>
-       <a href="https://tiktok.com/@sam.diorr"> <i class="fab fa-whatsapp"style="color: green"></i>
-        <a>tiktok</a> 
-      </li>
-      <li>
-        <a href="tel:+255742021824"> <i class="fab fa-call"style="color: blue"></i>
-        <a>call</a>
-      </li>
-    </ul>
-    <script src="index.js"></script>
-  </body>
+
+</body>
 </html>
